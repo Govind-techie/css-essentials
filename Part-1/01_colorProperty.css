@@ -1,0 +1,11 @@
+/* The color property sets the text color */
+
+/* Change the color of all <h1> headings to blue */
+h1 {
+  color: blue;
+}
+
+/* Change the color of all <p> paragraphs to green */
+p {
+  color: green;
+}

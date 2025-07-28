@@ -1,0 +1,53 @@
+/* Practice Question */
+
+/* Q1 — Inline style in HTML:
+   <body style="background-color: wheat;"> */
+
+/* Q2 (overridden by Q4) */
+#poem {
+    color: red;             /* Q4 — poem color changed to red (overrides Q2) */
+    text-align: center;     /* Q3 — align poem to center */
+    line-height: 30px;      /* Q9 — set line-height to 30px */
+}
+
+/* Q3 — align headings to center */
+h1 {
+    text-align: center;     /* Q3 */
+    color: black;           /* optional */
+}
+
+h3 {
+    text-align: center;     /* Q3 */
+    color: black;           /* Q4 — poet's name to black */
+}
+
+h4 {
+    text-align: center;     /* Q3 */
+}
+
+/* Q5 — set font for entire document */
+body {
+    font-family: "Georgia"; /* Q5 */
+}
+
+/* Q6 — link color green + no underline */
+a {
+    color: rgb(0, 128, 0);    /* Q6 */
+    text-decoration: none;   /* Q6 */
+}
+
+/* Q7 — button styling */
+button {
+    background-color: white;   /* Q7 */
+    color: blueviolet;         /* Q7 */
+}
+
+/* Q8 — textarea font color to black */
+textarea {
+    color: #000;               /* Q8 */
+}
+
+/* Q10 — underline only the word "Ozymandias" */
+.underline {
+    text-decoration: underline; /* Q10 */
+}

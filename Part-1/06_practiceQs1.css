@@ -1,0 +1,23 @@
+/*
+Problem Design the given Nike logo using CSS instructions
+• set the font-family to League spartan
+• set the color of text to #ffa511
+• center align the text
+• make the text size 55px & font-weight 900
+• set spacing between letters to 2px
+• set the line height to 1.5x the normal value
+• add a teal double underline
+• uppercase all the letters only using css (use Google)
+*/
+
+p {
+   font-family: "League Spartan";
+   color: #ffa511;
+   text-align: center;
+   font-size: 55px;
+   font-weight: 900;
+   line-height: 1.5;
+   letter-spacing: 2px;
+   text-decoration: double teal underline;
+   text-transform: uppercase;
+}

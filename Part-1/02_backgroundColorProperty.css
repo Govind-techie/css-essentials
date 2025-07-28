@@ -1,0 +1,9 @@
+/* Set the background color of all <h1> elements to yellow */
+h1 {
+    background-color: yellow;
+}
+
+/* Set the background color of all <p> (paragraph) elements to aqua */
+p {
+    background-color: aqua;
+}

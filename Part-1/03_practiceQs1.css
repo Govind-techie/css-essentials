@@ -1,0 +1,20 @@
+/* 
+Problem: Write CSS for these Elements according to the given style guidance:
+1. h2 => Orange Text
+2. p => black background color with white text
+3. button => blue background color with white text
+*/
+
+h2 {
+    color:orange;
+}
+
+p {
+    background-color: black;
+    color:white;
+}
+
+button {
+    background-color:blue;
+    color:white;
+}

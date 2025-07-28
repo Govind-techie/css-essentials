@@ -1,0 +1,32 @@
+/*
+Color System in CSS:
+
+1. RGB Color System:
+   - Uses Red, Green, Blue values.
+   - Each value ranges from 0 to 255.
+   - Example: rgb(255, 0, 0) = red
+
+2. Hex Code Color System:
+   - Uses hexadecimal values (base-16) for red, green, and blue.
+   - Example: #ff0000 = red
+
+Important Notes:
+- Both RGB and Hex give the same result, just different formats.
+- rgb() is useful when using rgba() for transparency.
+- Hex codes are shorter and commonly used in web design.
+
+Note: In both rgb and hex codes, we can create different combinations of colors based on our preferences and can increase or decrease the amount of each color based on our needs.
+*/
+
+
+/* Using RGB color system */
+strong {
+    color: rgb(255, 0, 0);              /* red text */
+    background-color: rgb(255, 255, 0); /* yellow background */
+}
+
+/* Using Hexadecimal color system */
+h3 {
+    color: #ffffff;            /* white text */
+    background-color: #000000; /* black background */
+}

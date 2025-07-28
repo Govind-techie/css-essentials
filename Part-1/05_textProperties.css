@@ -1,0 +1,72 @@
+/*
+Text Properties - CSS
+
+1. text-align
+   - Aligns text horizontally.
+   - Values: left, right, center, justify
+   - Example: text-align: center;
+
+2. font-weight
+   - Sets the boldness of text.
+   - Values: normal, bold, 100–900
+   - Example: font-weight: bold;
+
+3. text-decoration
+   - Adds or removes text decoration.
+   - Values: none, underline, line-through, overline
+   - Example: text-decoration: underline;
+
+4. line-height
+   - Sets vertical spacing between lines of text.
+   - Example: line-height: 1.5;
+
+5. letter-spacing
+   - Controls space between letters.
+   - Example: letter-spacing: 2px;
+
+6. font-size
+   - Sets the size of the text.
+   - Example: font-size: 16px;
+
+7. font-family
+   - Sets the typeface of the text.
+   - Example: font-family: Arial, sans-serif;
+*/
+
+/* text-align */
+h1 {
+    text-align: center; /* align h1 tag at center of webPage. */
+
+    /* 
+    Note: text-align is relative to the element's own width.
+    Example: text-align: right; + width: 50% → text aligns to the right edge of that 50% area, not the full parent so it look as center text alignment.
+    */
+
+    text-decoration: red wavy underline;
+    font-family: fantasy;
+}
+
+/* text-decoration is used to add extra elements to text to put on simply decorating text*/
+
+h2 {
+    text-align: left;
+    font-weight: normal; /* normal: 400 */
+    text-decoration: blue solid line-through;
+    font-family: sans-serif;
+}
+
+
+
+h3 {
+    text-align: end; /* align text to right */
+    font-weight: 200;
+    text-decoration: double orange dotted overline;
+}
+
+/* Note: font-weight can be adjusted from 100 to 900 to detemine to boldness of font */
+
+p {
+    text-align: justify;
+    line-height: 2; /* spacing between 2 lines */
+    letter-spacing: 3px; /* controls the horizontal spacing behavior between text characters */
+}
