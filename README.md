@@ -22,4 +22,23 @@ It's a must for those who are just starting or want to strengthen their understa
 
 ---
 
+## 📘 Part-2: CSS Selectors (Targeting Elements Precisely)
+
+This part focuses on **how to select and target HTML elements effectively** to style them exactly the way you want.  
+From the most universal targeting to highly specific selectors, this section helps you understand the true power of CSS in controlling styles across different scenarios.
+
+### ✅ Topics Covered:
+- **universalSelector** – Apply styles to *every* element on the page using the universal selector `*`.
+- **elementSelector** – Target elements directly by their HTML tag name.
+- **idSelector** – Apply styles to a single, unique element using the `id` selector.
+- **classSelector** – Target multiple elements with shared styles using `class` selectors.
+- **descendantSelector** – Style elements based on their nesting within other elements.
+- **siblingCombinator** – Select and style elements that are direct siblings using combinators.
+- **childCombinator** – Target only direct child elements of a parent.
+- **attributeSelector** – Select elements based on the presence or value of an attribute.
+- **pseudoClass** – Apply styles based on element states like `:hover`, `:focus`, etc.
+- **pseudoElements** – Style specific parts of an element, such as `::before` and `::after`.
+
+---
+
 📌 *More parts coming soon: layout systems (Flexbox, Grid), responsive design, animations, transitions, and more!*
