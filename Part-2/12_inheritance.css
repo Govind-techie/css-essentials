@@ -1,0 +1,32 @@
+/* 
+Inheritance in CSS
+
+- Some CSS properties are automatically passed from parent to child.
+- Useful for keeping consistent styles across elements.
+
+1. Inherited by default:
+   - color
+   - font-family
+   - font-size
+   - line-height
+   - visibility
+
+2. Not inherited by default:
+   - margin
+   - padding
+   - border
+   - width, height
+   - display, position
+
+3. Force inheritance:
+   - Use: property: inherit;
+
+4. Other keywords:
+   - initial → resets to default browser value
+   - unset → inherit if possible, otherwise default
+
+Note:
+- Inheritance works best for text-related properties.
+- Use wisely to avoid unexpected styling issues.
+*/
+

@@ -1,0 +1,49 @@
+/* 
+Descendant Selector
+Used to select elements that are nested inside a specific parent element.
+It targets all matching child elements that are descendants of a specified ancestor.
+
+Syntax:
+ancestor descendant {
+   -- styles --
+}
+
+Example:
+nav ul {
+  list-style-type: none;
+}
+
+This will apply the style to all <ul> elements that are inside a <nav> element.
+
+Note:
+- There can be any number of levels between the ancestor and descendant.
+- Useful for applying styles only within specific sections of the document.
+*/
+
+.post a { 
+    /* Styles all <a> (anchor) tags that are inside any element with class="post" */
+    color: indigo;
+}
+
+/*
+Using Class in Descendant Selector:
+- This targets elements more specifically by applying styles only when inside a particular classed section.
+- In this case, only <a> tags inside elements with class="post" will be styled.
+
+Why it's advisable:
+- Keeps styles scoped and avoids affecting similar tags in other parts of the page.
+- Makes CSS easier to manage and maintain, especially in larger projects.
+- Prevents unintended overrides and helps with better structure in modular designs.
+*/
+
+nav a { 
+    /* Styles all <a> tags that are inside the <nav> section */
+    color: blue;
+}
+
+/*
+Note:
+- The descendant selector is written as: parent child
+- It applies the style to all matching child elements at any depth inside the parent.
+- Useful for scoping styles within specific sections without affecting the entire document.
+*/

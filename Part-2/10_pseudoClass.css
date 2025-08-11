@@ -1,0 +1,62 @@
+/* 
+Pseudo-Classes in CSS
+
+- Pseudo-classes let you style elements based on their state or position.
+- They start with a colon (:) and require no extra classes or IDs.
+
+1. :hover
+   - Applies when the user hovers over an element with the mouse.
+   - Commonly used for buttons, links, and cards.
+
+2. :active
+   - Triggers when the element is being clicked or activated.
+   - Useful for adding click feedback.
+
+3. :focus
+   - Applies when an element (like input) is selected or focused.
+   - Helps highlight form fields during typing.
+
+4. :first-child
+   - Targets the first child element within a parent.
+
+5. :nth-child(n)
+   - Selects the nth element among siblings.
+   - Useful for alternating styles (like even/odd rows).
+
+6. :not(selector)
+   - Selects everything except the specified element.
+
+Note:
+- Pseudo-classes are dynamic and help create interactive, responsive UIs.
+*/
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+h3:hover{ 
+   text-decoration: none;
+}
+
+button:active{ /* Apply background color when the button is in active (clicked) state */
+   background-color: hotpink;
+}
+
+input[type="radio"]:checked + label{
+   color: red;
+   font-weight: bold;
+}
+
+div:nth-of-type(2){ /* If there are multiple elements of the same type, we can target a specific one using the :nth-of-type pseudo-class. 
+   For example, if there are 4 <div> elements in the document and we want to apply styles only to the second one, 
+   we can use :nth-of-type(2) to do so. */
+   background-color: crimson;
+}
+
+/* This targets every even-numbered <div> element (2nd, 4th, 6th, etc.) 
+   within its parent using the :nth-of-type(2n) pseudo-class.
+   The '2n' means "every 2nd element" starting from the second one. */
+div:nth-of-type(2n) {
+   background-color: blanchedalmond;
+}

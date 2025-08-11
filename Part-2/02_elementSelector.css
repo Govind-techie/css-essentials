@@ -1,0 +1,33 @@
+/* 
+Element Selector
+
+Element selector is used to style HTML elements by their tag name.
+It selects all elements of the specified type in the document.
+
+Example:
+h1 {
+  color: blue;
+  font-size: 32px;
+}
+
+This will apply the given styles to all <h1> elements on the page.
+
+Element selectors are useful for applying global styles to common tags 
+like p, h1-h6, a, div, etc.
+*/
+
+/* Element Selector */
+/* Targets all <h3> elements and applies the given style */
+h3 { 
+    color: indigo;
+}
+
+/* Targets all <h1> elements and sets their text color */
+h1 {
+    color: #b92b27;
+}
+
+/* Targets all <p> and <a> elements and applies the same color */
+p, a { /* Note: Multiple elements can be selected using a comma (,) to apply the same styling to all of them. */
+    color: red;
+}

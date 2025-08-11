@@ -1,0 +1,43 @@
+/* 
+Class Selector
+Used to select and style multiple elements that share the same class attribute.
+The class selector starts with a '.' followed by the class name.
+
+Example:
+.follow {
+  color: blue;
+  font-weight: bold;
+}
+
+This will apply the style to all elements with class="follow".
+
+Note:
+- Classes can be reused on multiple elements.
+- A single element can have multiple classes.
+- Use class selectors when you want to apply the same styling to a group of elements.
+*/
+
+/* 
+Styles all elements with class 'upvote'
+Gives them a bright green background and medium-bold text
+*/
+.upvote {
+    background-color: #00ff00;    /* Bright green background for positive action */
+    font-weight: 600;             /* Medium-bold text */
+}
+
+/* 
+Styles all elements with class 'answer'
+Applies Quora red background, white text, and bold font for emphasis
+*/
+.answer {
+    background-color: #B92B27;    /* Quora red for branding */
+    color: #fff;                  /* White text for contrast */
+    font-weight: bold;            /* Bold font for visibility */
+}
+
+
+/* 
+Note: Class selectors begin with a dot (.) and can be reused on multiple elements.
+Useful when multiple elements need the same styling.
+*/

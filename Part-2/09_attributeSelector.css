@@ -1,0 +1,48 @@
+/* 
+Attribute Selector — Notes:
+
+▪ The attribute selector is used to target HTML elements based on the presence 
+  or value of their attributes.
+
+▪ It is useful when you want to style elements dynamically, without relying on 
+  classes or IDs.
+
+Types of Attribute Selectors:
+
+1. [attr]
+   → Selects elements that have the specified attribute, regardless of its value.
+
+2. [attr="value"]
+   → Selects elements where the attribute is exactly equal to the given value.
+
+3. [attr^="value"]
+   → Selects elements where the attribute value starts with the specified string.
+
+4. [attr$="value"]
+   → Selects elements where the attribute value ends with the specified string.
+
+5. [attr*="value"]
+   → Selects elements where the attribute value contains the specified substring.
+
+Note:
+- Attribute selectors are powerful for targeting elements like links, inputs, or 
+  custom components in forms or navigation.
+- They are especially useful when working with dynamically generated HTML or 
+  third-party components.
+- Selects elements based on the presence or value of a given attribute
+*/
+
+/* Selects only text input fields and sets their text color to crimson */
+input[type="text"] {
+    color: crimson;
+}
+
+/* Selects only password input fields and sets their text color to green */
+input[type="password"] {
+    color: #0f0;
+}
+
+/* Selects all input fields that have any 'type' attribute and sets their background */
+input[type] {
+    background-color: ghostwhite;
+}

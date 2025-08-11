@@ -1,0 +1,24 @@
+/* 
+Universal Selector (*)
+
+The universal selector (*) targets all elements in the document.
+It is often used for resetting default styles to ensure consistency 
+across different browsers.
+
+Common usage:
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+This helps remove unwanted spacing and makes layout more predictable.
+Use with care, as it affects every element on the page.
+*/
+
+/* Universal Selector */
+* { 
+    font-family: "Courier New"; /* The universal selector (*) applies styles to all elements in the HTML document. */
+}
+
+/* Note: Universal selector is represented as asterisk (*) */

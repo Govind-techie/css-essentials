@@ -1,0 +1,39 @@
+/* 
+ID Selector
+Used to select a single, unique element based on its ID attribute.
+The ID selector starts with a '#' followed by the ID name.
+
+Example:
+#header {
+  background-color: lightblue;
+}
+
+This will apply the style only to the element with id="header".
+
+Note:
+- IDs must be unique within the HTML document.
+- Use ID selectors for styling one specific element only.
+*/
+
+/* 
+Styles the element with ID 'signup' 
+Applies white text and Quora's red as background 
+*/
+#signup {
+    color: white;                 /* Text color set to white */
+    background-color: #b92b27;    /* Background color: Quora red */
+}
+
+/* 
+Styles the element with ID 'login'
+Applies white text and Facebook's blue as background
+*/
+#login {
+    color: white;                 /* Text color set to white */
+    background-color: #1877F2;    /* Background color: Facebook blue */
+}
+
+/* 
+Note: It is recommended to keep IDs unique and meaningful, 
+as it makes styling and maintaining the code easier.
+*/

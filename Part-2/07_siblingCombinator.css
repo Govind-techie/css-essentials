@@ -1,0 +1,46 @@
+/* 
+Sibling Combinator in CSS
+
+1. Adjacent Sibling Selector (A + B):
+   - Selects the element B that is immediately next to element A (directly after it).
+
+   Example:
+   h2 + p {
+     color: blue;
+   }
+
+   This will style only the first <p> that comes immediately after an <h2>.
+
+2. General Sibling Selector (A ~ B):
+   - Selects all elements B that are siblings of element A and appear after it (not necessarily immediately).
+
+   Example:
+   h2 ~ p {
+     color: green;
+   }
+
+   This will style all <p> elements that are siblings of and appear after an <h2>.
+
+Note:
+- Sibling combinators only work on elements that share the same parent.
+- Useful when styling elements in relation to their nearby content.
+*/
+
+
+/* 
+This rule applies to any <h3> element that directly follows a <p> element.
+The '+' is the adjacent sibling combinator, meaning the <h3> must come 
+immediately after the <p> in the HTML structure.
+*/
+p + h3 {
+  text-decoration: underline; /* Underlines the <h3> text */
+}
+
+/* 
+This rule targets any element with the class 'answer' that directly follows 
+an element with the class 'upvote'.
+Again, the '+' means 'immediate next sibling' — both elements must share the same parent.
+*/
+.upvote + .answer {
+  background-color: crimson; /* Sets a red background to the .answer element */
+}

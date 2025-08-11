@@ -1,0 +1,31 @@
+/* 
+Child Combinator Selector ( > )
+Used to select elements that are **direct children** of a specified parent element.
+It does NOT select deeper nested descendants — only the first level of children.
+
+Syntax:
+parent > child {
+    -- style --
+}
+
+Example:
+div > p {
+  color: blue;
+}
+
+Explanation:
+- This will apply the color blue to all <p> elements that are direct children of a <div>.
+- It will NOT affect <p> elements that are nested deeper inside other elements within the <div>.
+*/
+
+/* Child Combinator */
+
+div > input { /* Adding background-color <input> (child) nested in <div> (parent) */
+    background-color: cornsilk;
+}
+
+/* 
+Note:
+In a child combinator, the selected element must be a direct child of the parent.
+This means the child must be immediately inside the parent, should not be nested deeper.
+*/

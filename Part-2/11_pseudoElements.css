@@ -1,0 +1,42 @@
+/* 
+Pseudo-Elements in CSS
+
+- Pseudo-elements let you style specific parts of an element.
+- They start with two colons (::), but older browsers also accept one.
+
+1. ::before
+   - Inserts content before the element’s actual content.
+   - Used for icons, labels, decorative elements, etc.
+
+2. ::after
+   - Inserts content after the element’s actual content.
+   - Commonly used to add arrows, badges, etc.
+
+3. ::first-letter
+   - Styles the first letter of a block of text.
+   - Used for drop caps or emphasis.
+
+4. ::first-line
+   - Styles only the first line of text in a block.
+
+5. ::placeholder
+   - Styles the placeholder text inside input or textarea fields.
+
+Note:
+- Pseudo-elements are useful for adding extra styling without extra HTML.
+- Always use `content: ""` with ::before and ::after.
+*/
+
+/* Style the first letter of all <h1> headings */
+h1::first-letter {
+    color: black;
+}
+
+/* Apply styling only to the first visible line of <h3> headings */
+h3::first-line {
+    color: red;
+}
+
+p::selection{
+    background-color: yellow /* Apply styling when a paragraph portion is selected. */ 
+}

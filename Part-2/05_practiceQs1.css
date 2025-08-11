@@ -1,0 +1,28 @@
+/*
+Practice Question => Implement the following CSS for the given html document.
+• Set font family of entire document to Courier New
+• Set text color for all h1 headings to #1b74e4
+• Set background color of search button to black & text to white
+• Set background color of login & signup button to aqua.
+*/
+
+/* Universal Selector: Applies the specified style to all elements in the HTML document */
+* {
+    font-family: "Courier New";
+}
+
+/* Element Selector: Targets all <h1> elements and applies the same style to them */
+h1 {
+    color: #1b74e4;
+}
+
+/* ID Selector: Targets a specific element with ID 'searchbtn' and styles only that one element */
+#searchbtn {
+    background-color: black;
+    color: white;
+}
+
+/* Class Selector: Used to apply the same style to multiple elements sharing the same class */
+.userbtn {
+    background-color: aqua;
+}
