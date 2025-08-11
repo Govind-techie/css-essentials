@@ -1,0 +1,85 @@
+/*
+Margin in CSS:
+
+1. margin:
+   - Defines the space outside an element's border, creating distance between the element and its surroundings.
+   - Accepts length units like px, em, rem, %, auto, etc.
+   - Example: '20px' adds 20 pixels of space outside all four sides of the element.
+
+2. Individual sides:
+   - You can specify margins separately for each side:
+     - margin-top
+     - margin-right
+     - margin-bottom
+     - margin-left
+   - This allows control over spacing on each side individually.
+
+3. Shorthand:
+   - You can specify 1 to 4 values in margin shorthand:
+     - 1 value applies to all four sides.
+     - 2 values: first applies to top & bottom, second to left & right.
+     - 3 values: top, left & right, bottom.
+     - 4 values: top, right, bottom, left (clockwise order).
+
+4. Special Values:
+   - 'auto' can be used to center elements horizontally when a width is set.
+   - Negative margin values are allowed, which pull elements closer or cause overlap.
+
+Use margins to control the spacing between elements for clean and organized layouts.
+*/
+
+div {
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+
+/* 
+#1. All four sides:
+   margin: 50px; 
+   → top, right, bottom, left = 50px
+*/
+
+div {
+  margin: 50px;
+}
+
+/* 
+#2. Top & Bottom | Left & Right:
+   margin: 1px 2px;
+   → top & bottom = 1px
+     left & right = 2px
+*/
+
+div {
+  margin: 1px 2px;
+}
+
+/* 
+#3. Top | Left & Right | Bottom:
+   margin: 1px 2px 3px;
+   → top = 1px
+     left & right = 2px
+     bottom = 3px
+*/
+
+div {
+  margin: 1px 2px 3px;
+}
+
+/* 
+#4. Top | Right | Bottom | Left (clockwise order):
+   margin: 1px 2px 3px 4px;
+   → top = 1px
+     right = 2px
+     bottom = 3px
+     left = 4px
+*/
+
+div {
+  margin: 1px 2px 3px 4px;
+}
+
+h1 {
+    /* Note: Headings and some particular element have their own default margin to remove that we can set margin of all sides as 0. */
+    margin: 0;
+}

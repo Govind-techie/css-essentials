@@ -1,0 +1,50 @@
+/* 
+Box Model in CSS
+
+- Describes how element size and spacing are calculated.
+- Every element is a rectangular box with content, padding, border, and margin.
+
+1. Content:
+   - Actual data inside the element (text, image, etc.)
+
+2. Padding:
+   - Space between content and border (inside the box)
+   - Increases total size unless using border-box
+
+3. Border:
+   - Line around padding and content
+   - border-width, border-style, border-color
+   - border-radius for rounded corners
+
+4. Margin:
+   - Space outside the element (between elements)
+   - margin: auto → centers block element horizontally
+
+5. Height & Width:
+   - Define content area size
+   - Units: px, %, em, rem, vw, vh
+   - min-/max- versions set size limits
+   - % is relative to parent element
+
+box-sizing:
+- content-box (default) → width/height = content only
+- border-box → width/height include padding + border
+
+Note:
+- Outline is like a border but doesn’t affect box size.
+- Total size = content + padding + border + margin (unless border-box)
+*/
+
+div {
+    /* Sets the height of the content area to 200 pixels, defining the vertical size of the element's content box according to the CSS box model.
+       Note: This height applies only to the content area unless 'box-sizing: border-box;' is used. */
+    height: 200px; 
+    
+    /* Sets the width of the content area to 300 pixels, defining the horizontal size of the element's content box.
+       Like height, this does not include padding, border, or margin unless 'box-sizing: border-box;' is set. */
+    width: 300px; 
+    
+    /* Sets the background color of the entire div element to yellow.
+       This color fills the content, padding, and border areas visually. */
+    background-color: yellow;
+}

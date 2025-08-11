@@ -1,0 +1,42 @@
+/* 
+Border Radius in CSS:
+
+1. border-radius:
+   - Defines the roundness of the corners of an element's border box.
+   - Accepts length units like px, em, rem or percentage (%).
+   - Example: '10px' creates a corner with a 10-pixel radius.
+   - A higher value creates more rounded corners; '50%' can create circular corners on square elements.
+
+2. Individual corners:
+   - You can specify border-radius separately for each corner:
+     - border-top-left-radius
+     - border-top-right-radius
+     - border-bottom-right-radius
+     - border-bottom-left-radius
+   - This allows asymmetric rounding of corners.
+
+3. Shorthand:
+   - You can specify 1 to 4 values in border-radius shorthand to control corners:
+     - 1 value applies to all corners.
+     - 2 values: first for top-left & bottom-right, second for top-right & bottom-left.
+     - 3 values: first top-left, second top-right & bottom-left, third bottom-right.
+     - 4 values: top-left, top-right, bottom-right, bottom-left respectively.
+
+Use border-radius to soften the edges of elements and improve visual design.
+*/
+
+div {
+    /* Applies a solid black border of 5px thickness */
+    border: 5px solid black;
+
+    /* Rounds all corners of the element with a radius of 15px */
+    border-radius: 15px; /* Gives edges of a box model more round and curved shape. */
+}
+
+h1 {
+    /* Applies a 20px rounding to the top-right corner only */
+    border-top-right-radius: 20px;
+
+    /* Applies a 20px rounding to the bottom-left corner only */
+    border-bottom-left-radius: 20px;
+}

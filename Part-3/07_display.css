@@ -1,0 +1,101 @@
+/*
+Display in CSS:
+
+1. display:
+   - Specifies how an element is displayed in the document (the layout behavior of the element).
+   - Common values:
+     - block: Element starts on a new line and takes up the full width available.
+     - inline: Element flows inline with text and only takes up as much width as necessary.
+     - inline-block: Behaves like inline but allows setting width and height.
+     - none: Hides the element (removes it from the layout flow).
+     - flex: Enables flexbox layout model for flexible and responsive arrangements.
+     - grid: Enables grid layout model for precise row/column placement.
+
+2. block:
+   - Examples: <div>, <p>, <h1> by default.
+   - Can set width, height, margin, padding.
+
+3. inline:
+   - Examples: <span>, <a>, <strong> by default.
+   - Cannot set width and height (applies only to content size).
+
+4. inline-block:
+   - Can set width/height like block, but still flows inline.
+
+5. none:
+   - Element is not rendered and does not take up space.
+
+6. flex/grid:
+   - Used for advanced layouts and responsive design.
+
+Use 'display' to control element flow and layout behavior in your page.
+*/
+
+
+h1 {
+    background-color: red;
+}
+
+h2 { 
+    /* By default, <h2> is a block-level element, meaning it takes up the full width and starts on a new line. */
+    display: inline; 
+    /* Changes the display type to inline, so <h2> only takes up as much width as its content and flows inline with surrounding text. */
+    background-color: yellow;
+}
+
+.span { 
+    /* By default, <span> is an inline element, meaning it only takes up as much width as its content and flows inline with text. */
+    display: block; 
+    /* Changes the display type to block, so <span> takes up the full width of its parent and starts on a new line. */
+    background-color: indigo;
+}
+
+#span {
+    /* Sets the background color of the element to lime, filling its content + padding area. */
+    background-color: lime;
+    
+    /* Adds a 2px solid black border around the element's padding box. */
+    border: 2px solid black;
+    
+    /* Explicitly sets the element's height to 100px. 
+    - Works if the element is block-level or inline-block. 
+    - Ignored if the element is inline (unless changed via display property). */
+    height: 100px;
+    
+    /* Explicitly sets the element's width to 200px. 
+    - Works for block-level or inline-block elements.
+    - Ignored for inline elements unless display is changed. */
+    width: 200px;
+    
+    /* Adds 50px of padding inside the border on all sides, increasing the total element size. */
+    padding: 50px;
+    
+    /* Adds 30px of space outside the border on all sides, separating the element from others. */
+    margin: 30px;
+}
+
+div {
+    border: 2px solid black; /* Border works fully for block elements */
+    height: 100px; /* Height applies to block elements */
+    width: 200px; /* Width applies to block elements */
+    padding: 50px; /* Padding works on all sides for block elements */
+    margin: 30px; /* Margin works on all sides for block elements */
+}
+
+/*
+Block & Inline Conclusions:
+
+BLOCK:
+- Always starts on a new line.
+- Takes up as much horizontal space as possible (full width of the container or browser window if there is no container).
+- Respects width and height CSS properties.
+- Margins work both horizontally and vertically.
+- Padding works on all sides without overlapping other elements.
+
+INLINE:
+- Does not start on a new line (flows inline with surrounding content).
+- Only takes up as much horizontal space as required by the content.
+- Ignores width and height CSS properties.
+- Margins work horizontally, but vertical margins have no effect on surrounding layout.
+- Padding works on all sides, but top and bottom padding may overlap other elements visually.
+*/

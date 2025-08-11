@@ -1,0 +1,69 @@
+/* 
+Border Properties in CSS:
+
+1. border-width:
+   - Specifies the thickness of the border.
+   - Accepts length values like px, em, rem, etc.
+   - Example: '3px' makes the border 3 pixels thick.
+
+2. border-style:
+   - Defines the style or pattern of the border line.
+   - Common values: solid, dashed, dotted, double, groove, ridge, inset, outset, none.
+   - Note: If border-style is not set, the border will not be visible, even if border-width and border-color are set.
+
+3. border-color:
+   - Sets the color of the border.
+   - Can use color names, hex codes (#000000), rgb(), rgba(), hsl(), etc.
+   - Default is usually the element's text color if not specified.
+
+Together, these three properties control the appearance of an element's border.
+*/
+
+/* 
+NOTE: BORDER SHORTHAND ORDER
+The shorthand property 'border' combines border-width, border-style, and border-color in this order:
+border: <width> <style> <color>;
+Example: border: 3px solid black;
+*/
+
+/* 
+BORDER SIDES
+You can apply border styles individually to each side using:
+- border-left
+- border-right
+- border-top
+- border-bottom
+Each can have its own width, style, and color.
+*/
+
+/* Example usage with individual sides and shorthand */
+
+div {
+    /* Sets the thickness of the border around the element to 3 pixels. */
+    border-width: 3px;
+
+    /* Applies a solid line style to the border, making it visible. */
+    border-style: solid;
+
+    /* Colors the border black. */
+    border-color: black;
+
+    /* Shorthand version of the above three properties:
+       border: 3px solid black; 
+       (Uncomment this line to use shorthand instead) */
+
+    /* Individual borders can have different styles, widths, and colors: */
+    border-left: 5px solid aqua;    /* Thick solid aqua left border */
+    border-right: 5px dotted red;   /* Thick dotted red right border */
+    border-top: 5px dashed green;   /* Thick dashed green top border */
+    border-bottom: 5px dashed black;/* Thick dashed black bottom border */
+}
+
+h1 {
+    /* Sets a dashed indigo border around the heading using shorthand */
+    border: 2px dashed indigo;
+
+    /* Specifies the width of the heading to 120 pixels; 
+       without a width, border would stretch across the container width */
+    width: 130px; /* If we don't specify the width of content border is applied to entire page width*/ 
+}
