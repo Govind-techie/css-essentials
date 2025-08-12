@@ -41,4 +41,21 @@ From the most universal targeting to highly specific selectors, this section hel
 
 ---
 
+## 📘 Part-3: CSS Box Model & Layout Basics
+
+This part dives into the **core building blocks of element sizing and layout in CSS** — understanding how elements occupy space, how borders, padding, and margins affect them, and how display properties control their placement on the page.  
+It’s essential for moving beyond simple styling and starting to create well-structured, visually balanced webpages.
+
+### ✅ Topics Covered:
+- **boxModel** – Understanding content, padding, border, and margin areas that make up the CSS box model.
+- **border** – Adding and styling borders around elements.
+- **borderRadius** – Rounding corners of boxes for smoother, modern designs.
+- **padding** – Controlling the space inside the border, around the content.
+- **margin** – Managing the space outside the border, between elements.
+- **display** – Learning how different display values (`block`, `inline`, `inline-block`, `none`, etc.) affect layout behavior.
+- **inlineBlock** – Using `inline-block` to combine inline and block characteristics for flexible layouts.
+- **units-css** – Exploring different CSS units like px, em, rem, %, and viewport units for responsive sizing.
+
+---
+
 📌 *More parts coming soon: layout systems (Flexbox, Grid), responsive design, animations, transitions, and more!*
