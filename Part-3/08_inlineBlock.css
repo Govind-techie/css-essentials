@@ -1,0 +1,35 @@
+/*
+CSS Display: inline-block
+
+- Mix of inline and block behavior.
+- Stays in the same line (like inline).
+- Lets you set width, height, padding, and margin (like block).
+- Useful for putting elements side-by-side while controlling their size.
+- Does not take full width automatically.
+- Can align with other inline or inline-block elements using vertical-align.
+- Can cause small white-space gaps between elements because of HTML spaces.
+- Common uses: menus, buttons, small cards, form fields.
+*/
+
+.div {
+    height: 100px; /* Normally ignored if display is inline */
+    width: 100px; /* Normally ignored if display is inline */
+    border: 2px solid black;
+    margin: 5px;
+    background-color: yellow;
+    
+    display: inline; /* Applying 'inline' on a block element ignores width/height and some box properties */
+
+    /* To allow block-level styling (width, height, padding, margin) while keeping elements inline, use 'inline-block' */
+    display: inline-block; /* Keeps the element inline but applies all block-level styles */
+}
+
+/*
+inline-block
+- Allows block-level styling (width, height, padding, margin).
+- Displays inline with other elements (no line break by default).
+*/
+
+#div3{
+    display: none; /* Hides the element completely; it will not appear on the page and no space is reserved for it */
+}

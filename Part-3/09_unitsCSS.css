@@ -1,0 +1,58 @@
+/*
+CSS Units
+
+Absolute:
+- px: Fixed size, does not scale with parent or root.
+
+Relative:
+- %  : Relative to parent size.
+- em : Relative to the element's font size.
+- rem: Relative to root (html) font size.
+*/
+
+
+html {
+    font-size: 16px; /* Root font size for rem */
+}
+
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Common box styling */
+.box {
+    height: 60px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* Absolute unit (px) */
+.px-box {
+    width: 200px; /* Always 200px regardless of parent or screen size */
+}
+
+/* Relative unit (%) */
+.percent-box {
+    width: 50%; /* Takes 50% of the parent container's width */
+}
+
+/* Demonstrating em & rem */
+.font-demo {
+    font-size: 20px; /* Parent font size for em example */
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+
+/* em: relative to parent font size (20px) */
+.em-text {
+    font-size: 2em; /* 2 * 20px = 40px */
+}
+
+/* rem: relative to root font size (16px) */
+.rem-text {
+    font-size: 2rem; /* 2 * 16px = 32px */
+}

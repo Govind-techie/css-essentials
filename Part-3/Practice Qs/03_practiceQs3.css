@@ -1,0 +1,18 @@
+/*
+Q3: Create a list of technologies:
+   - HTML, CSS, JavaScript, NodeJS, ReactJS, SQL, MongoDB, Java, C++, C, Python
+
+- Change the display of all list items to inline to place them in a single horizontal line.
+- Observe and explain why the bullet points disappear when list items are inline.
+*/
+
+.list {
+    display: inline;
+}
+
+/* 
+When list items are set to 'inline', they lose their block-level behavior.
+Bullet points (list markers) are part of block elements by default,
+so changing to inline removes the markers since inline elements don’t show bullets.
+To keep bullets while displaying horizontally, use other methods like 'inline-block' or flexbox.
+*/
