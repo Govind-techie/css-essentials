@@ -1,16 +1,14 @@
 # css-essentials
 
 - This repository is a focused and structured journey into mastering essential CSS concepts — built as I transitioned from learning static HTML to adding life, layout, and design to webpages using CSS.
-
 - It covers the foundations of CSS including topics like color systems, text properties, background styling, and layout basics, etc., and will continue to grow as I learn more.
-
 - Ideal for beginners looking to move from plain HTML to beautifully styled pages, and for anyone who wants to build strong, practical CSS skills from the ground up.
 
 ---
 
 ## 📘 Part-1: CSS Basics (Text & Color Foundations)
 
-This part lays the **foundation of CSS styling** — focusing on text formatting, color systems, and essential properties every beginner should know.  
+This part lays the **foundation of CSS styling** — focusing on text formatting, color systems, and essential properties every beginner should know.
 It's a must for those who are just starting or want to strengthen their understanding of how CSS handles colors and text.
 
 ### ✅ Topics Covered:
@@ -24,7 +22,7 @@ It's a must for those who are just starting or want to strengthen their understa
 
 ## 📘 Part-2: CSS Selectors (Targeting Elements Precisely)
 
-This part focuses on **how to select and target HTML elements effectively** to style them exactly the way you want.  
+This part focuses on **how to select and target HTML elements effectively** to style them exactly the way you want.
 From the most universal targeting to highly specific selectors, this section helps you understand the true power of CSS in controlling styles across different scenarios.
 
 ### ✅ Topics Covered:
@@ -43,7 +41,7 @@ From the most universal targeting to highly specific selectors, this section hel
 
 ## 📘 Part-3: CSS Box Model & Layout Basics
 
-This part dives into the **core building blocks of element sizing and layout in CSS** — understanding how elements occupy space, how borders, padding, and margins affect them, and how display properties control their placement on the page.  
+This part dives into the **core building blocks of element sizing and layout in CSS** — understanding how elements occupy space, how borders, padding, and margins affect them, and how display properties control their placement on the page.
 It’s essential for moving beyond simple styling and starting to create well-structured, visually balanced webpages.
 
 ### ✅ Topics Covered:
@@ -55,6 +53,21 @@ It’s essential for moving beyond simple styling and starting to create well-st
 - **display** – Learning how different display values (`block`, `inline`, `inline-block`, `none`, etc.) affect layout behavior.
 - **inlineBlock** – Using `inline-block` to combine inline and block characteristics for flexible layouts.
 - **units-css** – Exploring different CSS units like px, em, rem, %, and viewport units for responsive sizing.
+
+---
+
+## 📘 Part-4: CSS Advanced Styling & Effects
+
+This part introduces **visual enhancements and dynamic effects** in CSS — focusing on making elements more interactive, visually appealing, and positioned precisely.
+It’s perfect for learning how to add depth, animation, and more complex styling to your web pages.
+
+### ✅ Topics Covered:
+- **alpha & opacity** – Control element transparency and layering effects using `opacity` and RGBA colors.
+- **transitions** – Smoothly animate changes in property values for interactive UI effects.
+- **transform** – Apply transformations like `rotate`, `scale`, `translate`, and `skew` to elements.
+- **box-shadow** – Add shadows to elements for depth and visual emphasis.
+- **background-image** – Use images as backgrounds and control their positioning, repetition, and size.
+- **position** – Understand positioning schemes (`static`, `relative`, `absolute`, `fixed`, `sticky`) for precise element placement.
 
 ---
 
