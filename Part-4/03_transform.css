@@ -1,0 +1,123 @@
+/*
+CSS Transforms
+
+- The transform property lets you visually manipulate elements by rotating, scaling, skewing, or translating (moving) them in 2D or 3D space.
+- It does not affect the document flow (other elements don’t reflow when an element is transformed).
+
+Common Functions:
+1. translate(x, y) → Moves the element along X and/or Y axis.
+   • translateX(px) → move horizontally
+   • translateY(px) → move vertically
+
+2. rotate(angle) → Rotates the element by a given degree.
+   • Example: rotate(45deg)
+
+3. scale(x, y) → Scales the element’s size.
+   • scale(2) → doubles size
+   • scale(1.5, 0.5) → stretches horizontally, shrinks vertically
+
+4. skew(x-angle, y-angle) → Tilts the element.
+   • skewX(30deg)
+   • skewY(20deg)
+
+5. matrix(a, b, c, d, e, f) → Combines multiple transforms in a single function.
+
+Notes:
+- Multiple transforms can be combined: transform: translateX(50px) rotate(45deg);
+- Transforms often pair with transition for smooth animation.
+- Use transform-origin to change the pivot point (default is center).
+*/
+
+
+
+section {
+    margin-top: 100px;
+}
+
+div {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7a874a;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+div:nth-of-type(2n) {
+    background-color: #f7db6a;
+}
+
+div:nth-of-type(3n) {
+    background-color: #ebb02d;
+}
+
+/* 1. transform: rotate() */
+#first:hover {
+  transition: 2s;
+  transform: rotate(180deg); /* Rotates element upside down, including its content */
+}
+
+/* 
+Note: The transform applies to both the element and its content. 
+- Rotation is clockwise by default. 
+- Use negative degrees for anticlockwise rotation. 
+*/
+
+/* 2. transform: scale() */
+
+#second:hover {
+    transition: 2s; /* Adds a smooth 2-second transition for the scaling effect */
+    transform: scale(0.5); /* Scales the element and its content to half the original size (50%) */
+    transform: scaleX(2.5); /* Scales element along X axis */
+    transform: scaleY(2.5); /* Scales element along Y axis */
+
+    transform: scale(0.5,2); /* Make changes in the scale along X and Y axis simultaneously. */
+}
+
+/*
+Note: The scale transform resizes both the element and its content,
+shrinking or enlarging equally from the center by default.
+-> Default scale works on 2D elements; use scale3d for 3D, and scaleX/scaleY to scale along one axis.
+*/
+
+/* 3. transform: translate() */
+
+#third:hover {
+    transition: 2s; /* Adds a smooth 2-second transition for the translation */
+    transform: translate(50px, 100px); /* Moves element 50px to the right (X) and 100px down (Y) */
+}
+
+/*
+Note: 
+- The translate transform moves the element along X and Y axes without affecting other elements.
+- translateX(px) and translateY(px) can be used to move along a single axis.
+- translate3d(x, y, z) can be used for 3D movement, including along the Z-axis.
+- Transforms do not change the document flow.
+*/
+
+/* 4. transform: skew() */
+
+#fourth:hover {
+    transition: 1s; /* Adds a smooth 1-second transition for the skew effect */
+    transform: skew(30deg); /* Skews element 30 degrees along X axis by default */
+}
+
+/*
+Note:
+- The skew transform tilts the element along the X axis by default.
+- Use skewY(angle) to skew along the Y axis.
+- Skew does not affect the document flow.
+*/
+
+#fifth:hover{
+    transition: 2s;
+    transform: rotate(20deg) translateX(300px); 
+    /* Combines multiple transform functions: rotates 20 degrees and moves 300px along X axis for a smooth animation effect */
+}
+
+/*
+Note:
+- Multiple transforms can be combined in one property, e.g., rotate and translate.
+- The order of transforms affects the final position and rotation.
+- Transforms do not affect the layout of other elements (document flow remains unchanged).
+*/

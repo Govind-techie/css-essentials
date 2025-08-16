@@ -1,0 +1,66 @@
+/*
+CSS Transitions
+
+- Smoothly animate changes in CSS properties.
+- Works only on animatable properties (e.g., color, width, transform).
+
+1. Syntax:
+  • transition: property duration timing-function delay;
+  • Example: transition: background-color 0.5s ease-in-out 0.2s;
+
+2. Parts:
+  • property  → What to animate (color, width, all)
+  • duration  → How long it takes (0.3s, 1s)
+  • timing    → Speed pattern (see table)
+  • delay     → Wait time before animation starts
+
+3. Timing Functions:
+  • ease       → slow start & end, fast middle (default)
+  • linear     → same speed all the way
+  • ease-in    → slow start, fast end
+  • ease-out   → fast start, slow end
+  • ease-in-out→ slow start & end
+
+4. Multiple Properties:
+  • transition: width 1s ease, height 1s ease;
+  • transition: all 0.5s ease; → applies to all animatable properties
+
+5. Trigger:
+  • Happens when property value changes (hover, focus, JS, etc.)
+
+6. Tips:
+  • Use short times (0.2s–0.5s) for UI elements
+  • Avoid "all" if only specific props need animation
+*/
+
+#transition1{
+    height: 200px;
+    width: 200px;
+    background-color: lime;
+    border: 2px solid black; 
+    margin-top: 20px; 
+    transition-duration: 1s; /* Animate all animatable properties over 1 second it creates a slow changing effects. */
+    transition-delay: 1s; /* Adds a 1-second pause before the transition begins */
+}
+
+/* Note: 'transition' is a shorthand property, and multiple properties can be combined within it. */
+
+#transition1:hover{
+  background-color: yellow; /* Change background color on hover, triggering the transition */
+  border-radius: 50%; /* Change the border-radius with a set transition of 1s (delay). */
+} 
+
+/* Demonstrates smooth transition of margin-left (numeric value) and background color */
+#transition2 {
+  height: 100px; /* fixed size */
+  width: 100px; /* fixed size */
+  background-color: crimson; /* initial color */
+  margin: 20px auto; /* positions element, centers horizontally */
+  margin-left: 0; /* explicit numeric value to make margin-left animatable */
+  transition: margin-left 2s ease-in-out 0.3s, background-color 1s; /* margin-left animates over 2s with ease-in-out timing and 0.3s delay, background-color animates over 1s */
+}
+
+#transition2:hover {
+  margin-left: 450px; /* moves element to the right smoothly because it animates from 0 to 450px */
+  background-color: black; /* transitions from crimson to black */
+}

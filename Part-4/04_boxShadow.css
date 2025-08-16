@@ -1,0 +1,39 @@
+
+
+/*
+CSS Box-Shadow
+
+- The box-shadow property adds shadow effects around an element's frame (box).
+- It can create single or multiple shadows, inner or outer shadows.
+
+Syntax:
+box-shadow: offset-x offset-y blur-radius spread-radius color inset;
+
+Parameters:
+- offset-x: horizontal offset of the shadow (positive → right, negative → left)
+- offset-y: vertical offset of the shadow (positive → down, negative → up)
+- blur-radius (optional): how blurry the shadow is (default 0)
+- spread-radius (optional): size of the shadow (positive → expands, negative → shrinks)
+- color (optional): color of the shadow (default: current color)
+- inset (optional): makes the shadow appear inside the element
+
+Notes:
+- Multiple shadows can be applied by separating them with commas.
+- Box-shadow does not affect the element's layout.
+- Using rgba colors allows semi-transparent shadows for better visual effects.
+*/
+
+#box {
+    height: 100px; /* Sets the height of the box */
+    width: 100px; /* Sets the width of the box */
+    border: 2px solid black; /* Adds a 2px solid black border around the box */
+    background-color: yellow; /* Sets the background color of the box */
+    box-shadow: 2px 2px 5px black; 
+    /* 
+    Adds a shadow: 
+        - 2px to the right (X offset), 
+        - 2px down (Y offset), 
+        - 5px blur radius, 
+        - black color 
+    */
+}

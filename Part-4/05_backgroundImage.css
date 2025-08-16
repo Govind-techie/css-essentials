@@ -1,0 +1,44 @@
+/*
+CSS Background Image & Background Size
+
+- background-image: sets one or more images as the background of an element.
+  Syntax: background-image: url('image.jpg');
+  Notes:
+  - You can use multiple images separated by commas.
+  - Can use gradients as background images (linear-gradient, radial-gradient, etc.).
+  - If no image is provided, the element uses background-color.
+
+- background-size: controls the size of the background image.
+  Syntax: background-size: auto | cover | contain | <length> | <percentage>;
+  Parameters:
+  - auto (default): original size of the image.
+  - cover: scales the image to cover the entire element (may crop).
+  - contain: scales the image to fit inside the element (maintains aspect ratio).
+  - length/percentage: specify exact width and height.
+
+Notes:
+- You can combine multiple background properties in one shorthand: background: [color] [image] [position] [size] [repeat] [attachment];
+- background-size is especially useful when creating responsive designs to ensure the image scales correctly.
+*/
+
+#bg {
+    height: 200px; 
+    width: 400px; 
+    background-color: yellow;
+    margin: 10px auto; /* Adds vertical spacing and centers the element horizontally */
+    background-image: url(bgimage.jpg); /* Sets the background image */
+    background-size: cover; /* Scales the image to cover the entire element, cropping if necessary */
+}
+
+/*
+Note:
+- background-image sets an image as the background; multiple images can be layered by separating with commas.
+- background-size defines how the image fits within the element:
+  • cover → scales the image to cover the whole element (may crop) 
+  • contain → scales the image to fit inside the element (maintains aspect ratio)
+  • auto / length / percentage → sets custom size
+- Always provide a background-color as a fallback.
+- These properties help create responsive and visually appealing backgrounds.
+
+Note: 'cover' is generally preferred for background images as it ensures the image fills the element, looks cleaner, and maintains high visual quality.
+*/

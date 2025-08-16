@@ -1,0 +1,58 @@
+/* 
+Problem: Create a Smiley Face Using CSS
+
+Objective:
+- Build a simple smiley face using HTML and CSS.
+- As you learn more CSS properties, progressively add new features to make the smiley more expressive and visually appealing.
+
+Requirements:
+1. Face: 
+   - Circular yellow face with a black border.
+2. Eyes:
+   - Two black circles positioned inside the face.
+3. Mouth:
+   - A red curved shape to represent the smile.
+
+Enhancements (to add as you learn):
+- Hover effects (e.g., eyes blink, mouth changes).
+- Rotations using transform.
+- Shadows using box-shadow.
+- Gradient backgrounds.
+- Responsive design for different screen sizes.
+
+Goal:
+- Start simple and gradually improve the smiley face as your CSS knowledge grows.
+- Comment your CSS to explain what each property does.
+*/
+
+#face {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.eyes {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 63px;
+    margin-right: 30px;
+}
+
+#mouth {
+    height: 25px;
+    width: 75px;
+    background-color: red;
+    position: relative;
+    top: 100px;
+    left: 63px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+

@@ -1,0 +1,95 @@
+/*  
+CSS Position Property
+
+- The position property specifies how an element is positioned in a document.
+- It determines the element's layout behavior and how it interacts with other elements.
+
+Values:
+1. static (default) 
+   - Normal flow, ignores top/right/bottom/left properties.
+2. relative
+   - Positioned relative to its normal position. Other elements remain in their normal flow.
+3. absolute
+   - Positioned relative to the nearest positioned ancestor (not static). Removed from normal flow.
+4. fixed
+   - Positioned relative to the viewport. Stays in place during scrolling. Removed from normal flow.
+5. sticky
+   - Toggles between relative and fixed based on scroll position. Remains in normal flow until a scroll threshold is reached.
+
+Notes:
+- Top, right, bottom, and left properties only affect elements with position relative, absolute, fixed, or sticky.
+- Z-index can be used in conjunction with position to control stacking order.
+*/
+
+div {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    border: 2px solid black;
+    background-color: green;
+    display: inline-block
+}
+
+
+#static { 
+    background-color: yellow; /* Sets the background color of the element */
+    position: static; /* Default position: element stays in normal flow; top/left have no effect */
+    top: 100px; /* Has no effect because position is static */
+    left: 100px; /* Has no effect because position is static */
+}
+
+/*
+Note:
+- position: static is the default for all elements.
+- Elements remain in the normal document flow.
+- Top, right, bottom, and left properties do not apply to static elements.
+*/
+
+#relative {
+    background-color: lightblue; /* Sets background color */
+    position: relative; /* Element is positioned relative to its normal position */
+    top: 20px; /* Moves the element 20px down from its normal position */
+    left: 30px; /* Moves the element 30px right from its normal position */
+}
+
+/*
+Note:
+- position: relative moves the element relative to its original position (from center).
+- Other elements remain in the normal flow.
+- Top, right, bottom, and left properties now affect the element.
+*/
+
+/*
+Relative vs Absolute Spacing:
+- position: relative moves the element relative to its normal position, so other elements maintain their spacing and the normal flow is preserved.
+- position: absolute removes the element from the normal flow, so spacing for other elements behaves as if the absolute element does not exist.
+- Top, left, bottom, and right offsets move the element differently: relative offsets shift the element while keeping space reserved; absolute offsets place the element precisely relative to its nearest positioned ancestor without reserving space.
+*/
+
+#absolute {
+    background-color: orange; /* Sets background color */
+    position: absolute; /* Element is positioned relative to its nearest positioned ancestor */
+    top: 50px; /* 50px from the top of the positioned ancestor */
+    left: 60px; /* 60px from the left of the positioned ancestor */
+}
+
+/*
+Note:
+- position: absolute removes the element from normal flow.
+- Positioned relative to the nearest ancestor with position other than static.
+- Other elements behave as if this element does not exist.
+*/
+
+#fixed {
+    background-color: pink; /* Sets background color */
+    position: fixed; /* Element is positioned relative to the viewport */
+    top: 10px; /* 10px from the top of the viewport */
+    left: 20px; /* 20px from the left of the viewport */
+}
+
+/*
+Note:
+- position: fixed keeps the element fixed relative to the viewport even when scrolling.
+- Removed from normal document flow.
+- Useful for sticky headers, floating buttons, etc.
+*/
