@@ -1,0 +1,110 @@
+/* 
+Justify-Content
+
+justify-content is used to align flex items along 
+the main axis (horizontal in row direction, vertical in column direction).
+
+Values:
+- flex-start (default): items packed at the start.
+- flex-end: items packed at the end.
+- center: items packed in the center.
+- space-between: equal space between items, edges tight to container.
+- space-around: equal space around items (half space at edges).
+- space-evenly: equal space distributed including container edges.
+
+Remember:
+- justify-content works along the main axis.
+- To align along the cross axis, use align-items or align-content.
+
+Note => Tells how the browser distributes space between and around content items along the main-axis.
+*/
+
+/* Justify-Content Examples */
+
+/* flex-start (default: items at the start) */
+.justify-start {
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid black;
+    margin: 10px;
+}
+.justify-start div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+}
+
+/* flex-end (items at the end) */
+.justify-end {
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid black;
+    margin: 10px;
+}
+.justify-end div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgreen;
+}
+
+/* center (items in the center) */
+.justify-center {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 10px;
+}
+.justify-center div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightcoral;
+}
+
+/* space-between (equal space between items) */
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin: 10px;
+}
+.justify-between div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgoldenrodyellow;
+}
+
+/* space-around (equal space around items) */
+.justify-around {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    margin: 10px;
+}
+.justify-around div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightpink;
+}
+
+/* space-evenly (equal space everywhere) */
+.justify-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    margin: 10px;
+}
+.justify-evenly div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightseagreen;
+}
+
+/* Important Notes on justify-content:
+- Works only on flex containers (display: flex or inline-flex).
+- Aligns items along the main axis (row = horizontal, column = vertical).
+- Does not affect alignment along the cross axis (use align-items for that).
+- space-between, space-around, and space-evenly distribute free space differently:
+    • space-between → no space at edges, only between items.
+    • space-around → half space at edges compared to space between items.
+    • space-evenly → equal space between items and at edges.
+*/

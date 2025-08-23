@@ -71,4 +71,22 @@ It’s perfect for learning how to add depth, animation, and more complex stylin
 
 ---
 
-📌 *More parts coming soon: layout systems (Flexbox, Grid), responsive design, animations, transitions, and more!*
+## 📘 Part-5: CSS Flexbox (Modern Layout System)
+
+This part covers **Flexbox**, one of the most powerful and modern layout systems in CSS.  
+Flexbox makes it easier to align, distribute, and order elements within a container, even when their sizes are dynamic or unknown.  
+It helps in creating responsive and flexible designs without relying heavily on floats or complex positioning.
+
+### ✅ Topics Covered:
+- **flexbox** – Introduction to Flexbox and its role in modern layouts.
+- **flex-direction** – Define the direction of flex items (row, column, row-reverse, column-reverse).
+- **justify-content** – Control horizontal alignment and spacing of items within a flex container.
+- **flex-wrap** – Allow items to wrap onto multiple lines when space is limited.
+- **align-items** – Align flex items along the cross-axis (vertical in row direction, horizontal in column direction).
+- **align-content** – Manage spacing between rows of flex items when wrapping occurs.
+- **align-self** – Override alignment for individual flex items.
+- **flex-sizing** – Control how flex items grow, shrink, and take space using `flex-grow`, `flex-shrink`, and `flex-basis`.
+
+---
+
+📌 *More parts coming soon: layout systems (Grid), responsive design, animations, transitions, and more!*

@@ -1,0 +1,71 @@
+/*
+  Flex Sizing in CSS Flexbox
+ 
+  Flex sizing determines how flex items grow, shrink, and occupy space within a flex container.
+  The main properties involved are:
+ 
+  1. flex-grow:
+     - Defines how much a flex item will grow relative to the rest of the flex items inside the container.
+     - If all items have flex-grow: 1, they will take up equal space. If one item has flex-grow: 2, it will take twice as much space as an item with flex-grow: 1.
+ 
+  2. flex-shrink:
+     - Specifies how much a flex item will shrink relative to the other items when there isn't enough space in the container.
+     - A higher number means the item can shrink more compared to others.
+ 
+  3. flex-basis:
+     - Sets the initial main size of a flex item before any growing or shrinking occurs.
+     - Can be set to a length (e.g., 100px) or auto.
+ 
+  The 'flex' shorthand property combines flex-grow, flex-shrink, and flex-basis into a single declaration:
+     flex: <flex-grow> <flex-shrink> <flex-basis>;
+ */
+
+ .con2 {
+    height: 300px;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+ }
+
+ .items {
+   width: 300px;
+ }
+
+ #itm1 {
+    flex-basis: 100px;
+ }
+
+ /*
+ -> Note: flex-basis applies to the main axis. If the flex-direction is row (default), flex-basis sets the width. If the flex-direction is column, flex-basis sets the height.
+ -> Note: flex-basis is applied individually to each flex item, allowing different items to have different initial sizes along the main axis.
+ */
+ 
+ #itm2 {
+    flex-grow: 3;
+    max-width: 300px;
+ }
+
+/*
+ Note: You can use max-width or min-width to control the limits of how much a flex item can grow or shrink, 
+ even when flex-grow or flex-shrink is applied to it.
+ */
+
+ #itm3 {
+    flex-grow: 2;
+    min-width: 100px;
+ }
+
+/*
+  -> flex-grow defines how much a flex item will expand relative to other items when extra space is available in the flex container.
+  -> The value is proportional: for example, an item with flex-grow: 3 will take 3 times as much extra space as an item with flex-grow: 1.
+  -> In this example, #itm2 grows more (3 parts) and #itm3 grows less (2 parts) compared to other items with smaller or no grow values.
+*/
+
+#itm4 {
+   flex-shrink: 2;
+   /* flex-shrink determines how much a flex item will shrink relative to other items when the flex container has insufficient space (i.e., when content overflows). */
+}
+
+

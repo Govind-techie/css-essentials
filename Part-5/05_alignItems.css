@@ -1,0 +1,80 @@
+/* 
+align-items in CSS:
+
+- Used in Flexbox to align items along the cross axis 
+  (perpendicular to the main axis).
+- In a row layout, it controls vertical alignment.
+- In a column layout, it controls horizontal alignment.
+
+Common values:
+- flex-start  -> Items at the start
+- flex-end    -> Items at the end
+- center      -> Items in the middle
+- stretch     -> Items stretch to fill (default)
+- baseline    -> Items align by their text baseline
+
+Example:
+.container {
+  display: flex;
+  align-items: center;
+}
+
+Note: Works only in flex or grid containers.
+*/
+
+.container {
+    height: 300px;
+    width: 300px;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: red;
+    display: flex;
+
+    /* justify-content controls horizontal alignment (main axis in row layout). */
+    justify-content: center;
+
+    /* align-items controls vertical alignment (cross axis in row layout). 
+       Here, the yellow boxes will be vertically centered inside the red container. */
+    align-items: center;
+}
+
+/* 
+Note: 
+- justify-content handles alignment on the main axis. 
+- align-items handles alignment on the cross axis. 
+Together, they let us place flex items in positions like 
+center, top-right, bottom-left, and more.
+*/
+
+.box {
+    height: 100px;
+    width: 100px;
+    align-items: baseline;
+    background-color: yellow;
+}
+
+/* 
+The 'align-items: baseline;' property aligns all the items in a flex container based on their text baselines.
+This means that if the flex items have different font sizes or text-align properties, their text lines up along the same baseline,
+rather than the boxes aligning by their height or edges. This is useful for aligning text content consistently even if the boxes vary in size.
+*/
+.container2 {
+    height: 100px;
+    width: 300px;
+    border: 2px solid black;
+    display: flex;
+    place-items: center;
+    /* Align all the items in a flex container within a baseline.
+       This aligns items based on their text baseline, so items with different font sizes will align their text rather than their box height. */
+    align-items: baseline; /* Align all the items in a flex container within a baseline. */
+}
+
+.box2 {
+    padding: 10px;
+    margin: 10px;
+    height: 50px; 
+    width: 50px;
+    /* Different font sizes affect the baseline alignment, making it visible in the layout. */
+    font-size: 0.8em;
+    background-color: lightblue;
+}

@@ -1,0 +1,69 @@
+/* 
+Flex-Wrap Notes
+
+flex-wrap controls whether flex items are forced 
+to stay in one line or can wrap onto multiple lines.
+
+Values:
+- nowrap (default): all items stay on a single line, 
+  items may shrink to fit.
+- wrap: items wrap onto multiple lines from top to bottom.
+- wrap-reverse: items wrap onto multiple lines from bottom to top.
+
+Remember:
+- Useful when items don’t fit in a single row or column.
+- Often combined with flex-direction to control layout in both axes.
+
+Note: Sets whether flex items are forced onto one line or can wrap onto multiple lines.
+*/
+
+/* Flex-Wrap Demonstration */
+
+/* Base styling for container */
+.container {
+    display: flex; /* enables flexbox */
+    gap: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    width: 400px; /* fixed width to force wrapping */
+    height: auto;
+    flex-direction: row; /* row is the default; change to column to see how flex-wrap works vertically */
+}
+
+/* Each box */
+.box {
+    width: 120px; /* wider than container can hold all in one line */
+    height: 80px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex; /* centers numbers */
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Example 1: No wrap (default) */
+.nowrap {
+    flex-wrap: nowrap; /* all items try to stay in one line */
+}
+
+/* Example 2: Wrap (top → bottom) */
+.wrap {
+    flex-wrap: wrap; /* items wrap onto next line when needed */
+    /* Note: Wrapped around main axis. */
+}
+
+/* Example 3: Wrap Reverse (bottom → top) */
+.wrap-reverse {
+    flex-wrap: wrap-reverse; /* items wrap but stack upwards */
+    /* Note: Wrapped around cross axis in reverse direction */
+}
+
+/* Important Notes
+- flex-wrap: nowrap can cause items to shrink below their set width to fit in one line.
+- flex-wrap: wrap respects the item width and pushes items to the next line when necessary.
+- flex-wrap: wrap-reverse reverses the stacking order, wrapping items from bottom to top.
+- flex-wrap also works when flex-direction is set to column, wrapping items vertically instead of horizontally.
+*/

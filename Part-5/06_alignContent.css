@@ -1,0 +1,52 @@
+/*
+  The `align-content` property in CSS is used in flexbox and grid layouts to control the spacing and distribution of multiple rows (in flexbox) or columns/rows (in grid) along the cross-axis (perpendicular to the main axis).
+
+  Key Points:
+  - `align-content` only has an effect when there is extra space in the cross-axis and when there are multiple lines of content (e.g., when `flex-wrap` is enabled and flex items wrap onto multiple rows).
+  - It determines how the lines (rows or columns) are distributed within the container, not the individual items.
+
+  Common values:
+    - `flex-start`: Packs the lines toward the start of the cross-axis.
+    - `flex-end`: Packs the lines toward the end of the cross-axis.
+    - `center`: Packs the lines toward the center of the cross-axis.
+    - `space-between`: Evenly distributes the lines, with the first line at the start and the last line at the end.
+    - `space-around`: Evenly distributes the lines with equal space around them.
+    - `space-evenly`: Distributes the lines so that the spaces between all lines (including edges) are equal.
+    - `stretch`: Stretches the lines to fill the container (default).
+
+*/
+
+
+/* 
+  The .container class below creates a flexbox container (`display: flex`).
+  - `flex-wrap: wrap` allows flex items to move onto the next line when there's not enough space.
+  - `height: 200px` provides extra vertical space, necessary for `align-content` to have a visible effect (since it only works when there is extra space in the cross-axis and multiple rows).
+  - `align-content: space-around` distributes the multiple rows of flex items along the vertical (cross) axis, adding equal space above, below, and between each row.
+*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  border: 2px solid black;
+  align-content: space-around;
+    /* Try changing this value (e.g., flex-start, flex-end, center, space-between, space-evenly, stretch) to observe how the rows are aligned differently. */
+}
+
+/*
+  The .item class below:
+  - Sets a fixed width and height so that items will wrap onto new lines when the container is too small.
+  - Adds margin to separate each item visually.
+  - Uses `display: flex`, `justify-content: center`, and `align-items: center` to center the text inside each box both horizontally and vertically.
+*/
+.item {
+  width: 80px;
+  height: 60px;
+  margin: 5px;
+  background: tomato;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+

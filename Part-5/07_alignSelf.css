@@ -1,0 +1,41 @@
+/*
+  -> The `align-self` property in CSS Flexbox is used to override the container’s `align-items` value for a specific flex item.
+  -> It controls the alignment of an individual flex item along the cross-axis (perpendicular to the main axis).
+  -> This allows single items to align differently from the rest of the group, giving you fine-tuned control.
+ 
+  Common values:
+    - flex-start: Item is packed toward the start of the cross-axis.
+    - flex-end:   Item is packed toward the end of the cross-axis.
+    - center:     Item is centered along the cross-axis.
+    - baseline:   Item’s baseline is aligned with the baselines of other items.
+    - stretch:    Item is stretched to fill the container (default, if not otherwise set).
+ 
+  Note: If `align-self` is not specified, the item inherits the container’s `align-items` value.
+ */
+
+
+/* This sets up a flex container where items are aligned based on the container’s properties. */
+ .con {
+    height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: flex-start;
+ }
+
+/* These are the common styles for each flex item. */
+.items {
+    height: 75px;
+    width: 75px;
+    margin: 5px;
+    background-color: yellow;
+}
+
+/* align-self: flex-end; overrides the container’s align-items (or default stretch) and moves only this item to the end of the cross-axis, showing how align-self targets a single item. */
+#item5 {
+    align-self: flex-end; /* align-self applies only on an individual item.*/
+}
+
+/* Note: The align-self property takes precedence over align-items, meaning an individual item’s align-self will override the container’s align-items value. */
+
+

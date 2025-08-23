@@ -1,0 +1,54 @@
+/* 
+Flexbox
+
+Flexbox (Flexible Box Layout) is used to create flexible 
+and responsive layouts.
+
+Key Concepts:
+- Container: The parent element where flexbox is applied.
+- Items: The children inside the flex container.
+
+Main Axis vs Cross Axis:
+- Main Axis: The direction of flex items (depends on flex-direction).
+- Cross Axis: The perpendicular direction.
+
+Common Container Properties:
+- display: flex; → activates flexbox
+- flex-direction → sets the direction (row, column, etc.)
+- justify-content → aligns items along the main axis
+- align-items → aligns items along the cross axis
+- flex-wrap → allows items to wrap onto new lines
+
+Common Item Properties:
+- flex-grow → how much an item can grow
+- flex-shrink → how much an item can shrink
+- flex-basis → initial size of an item
+- align-self → overrides align-items for one item
+
+Use Flexbox when:
+- You want to center elements easily
+- You need spacing and alignment between items
+- You want simple responsive layouts
+
+Note => It is a one-dimensional layout method for arranging items in rows or columns.
+*/
+
+#container {
+    height: 300px;
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: azure;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 300px;
+    font-size: 1.5;
+    text-align: center;
+}

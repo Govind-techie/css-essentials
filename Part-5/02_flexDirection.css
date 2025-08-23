@@ -1,0 +1,78 @@
+/*
+Flexbox Direction
+
+flex-direction defines the direction of the main axis
+and determines how flex items are placed inside the container.
+
+Values:
+- row (default): items are placed left to right.
+- row-reverse: items are placed right to left.
+- column: items are placed top to bottom.
+- column-reverse: items are placed bottom to top.
+
+Remember:
+- Main axis changes based on flex-direction.
+- Cross axis is always perpendicular to the main axis.
+*/
+
+/* Example for row (default) */
+.flex-row {
+    display: flex;
+    flex-direction: row; /* Places items left to right (default) */
+    border: 2px solid black;
+    margin: 10px;
+}
+.flex-row div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+}
+
+/* Example for row-reverse */
+.flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse; /* Places items right to left */
+    border: 2px solid black;
+    margin: 10px;
+}
+.flex-row-reverse div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgreen;
+}
+
+/* Example for column */
+.flex-column {
+    display: flex;
+    flex-direction: column; /* Places items top to bottom */
+    border: 2px solid black;
+    margin: 10px;
+    width: 200px;
+}
+.flex-column div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightcoral;
+}
+
+/* Example for column-reverse */
+.flex-column-reverse {
+    display: flex;
+    flex-direction: column-reverse; /* Places items bottom to top */
+    border: 2px solid black;
+    margin: 10px;
+    width: 200px;
+}
+.flex-column-reverse div {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgoldenrodyellow;
+}
+
+/* Important Notes on flex-direction:
+- flex-direction only affects the arrangement of items along the main axis.
+- It does not change the order of items in the source code (just their visual arrangement).
+- row / row-reverse → main axis is horizontal.
+- column / column-reverse → main axis is vertical.
+- Cross axis is always perpendicular to the chosen main axis.
+*/
