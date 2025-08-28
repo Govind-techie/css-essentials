@@ -89,4 +89,27 @@ It helps in creating responsive and flexible designs without relying heavily on 
 
 ---
 
-📌 *More parts coming soon: layout systems (Grid), responsive design, animations, transitions, and more!*
+## 📘 Part-6: CSS Grid, Responsive Design & Advanced Properties
+
+This part extends the journey into **modern layout systems and advanced CSS properties**.  
+It introduces CSS Grid for powerful two-dimensional layouts, explains responsiveness with media queries, and covers essential advanced properties like animations and z-index for managing element stacking.  
+Together, these topics provide the foundation for creating responsive, dynamic, and well-structured web pages.
+
+### ✅ Topics Covered:
+- **grid** – Introduction to CSS Grid and its role as a two-dimensional layout system.
+- **gridTemplates** – Define row and column structures using `grid-template-rows` and `grid-template-columns`.
+- **gridGaps** – Control spacing between rows and columns with `grid-gap`, `row-gap`, and `column-gap`.
+- **gridColumn (property)** – Specify how many columns an element should span or where it should start.
+- **gridRow (property)** – Specify how many rows an element should span or where it should start.
+- **gridProperties** – Master alignment inside grids with:
+  - `justify-items` / `justify-self`
+  - `align-items` / `align-self`
+  - `place-items` / `place-self`
+- **animations** – Apply smooth, keyframe-based animations to bring elements to life.
+- **media queries** – Make web pages responsive by applying styles based on device size or orientation.
+- **z-index** – Control element stacking order along the z-axis for layered designs.
+
+---
+
+📌 Note: With Part-6 completed, we are done with the learning phase.  
+The next step is to apply these concepts by building mini projects and practicing real-world layouts.
