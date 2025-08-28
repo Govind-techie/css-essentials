@@ -1,0 +1,42 @@
+/*
+   Grid Row Property in CSS
+
+   - The `grid-row` property is used to control how many rows 
+     a grid item spans across in a grid layout.
+   - It works by referencing horizontal grid lines, not just the number of rows.
+
+   Ways to define grid-row:
+   1. Using start and end grid lines
+      Example: grid-row: 1 / 3;
+      → The item starts at horizontal grid line 1 and ends just before horizontal grid line 3.
+
+   2. Using grid-row-start and grid-row-end separately
+      Example: 
+         grid-row-start: 2;
+         grid-row-end: 4;
+      → The item spans from horizontal grid line 2 up to (but not including) grid line 4.
+
+   3. Using the span keyword
+      Example: grid-row: 1 / span 2;
+      → The item starts at horizontal grid line 1 and spans across 2 rows.
+
+   Notes:
+   - Grid lines are numbered starting from 1 at the top horizontal line.
+   - The shorthand `grid-row` combines start and end values into one line.
+   - Useful for defining precise placement and spanning of items within the grid.
+*/ 
+
+.one {
+    grid-row-start: 1; /* Item starts from the first horizontal grid line */
+    grid-row-end: 3;   /* Item spans until (but not including) the third horizontal grid line */
+
+    grid-row: 1/4; /* shorthand: grid-row: (start-grid-line) / (end-grid-line) */
+
+    grid-row: 1/span 3; /* By default, grid placement uses grid lines. Using the 'span' keyword lets you define the span in terms of rows (e.g., span 3 means the item covers 3 rows). */
+}
+
+/* 
+Note: These properties use grid lines, not row counts, to determine placement.
+*/
+
+

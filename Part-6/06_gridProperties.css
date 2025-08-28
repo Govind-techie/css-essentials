@@ -1,0 +1,100 @@
+/*
+   Grid Properties in CSS
+
+   These properties control alignment of items inside a CSS Grid.
+
+   1. justify-items
+      - Aligns all grid items along the inline (row) axis inside their grid cells.
+      - Possible values: start, end, center, stretch.
+      - Applies to all items in the container.
+
+   2. justify-self
+      - Aligns a single grid item along the inline (row) axis inside its own cell.
+      - Overrides justify-items for that specific item.
+
+   3. align-items
+      - Aligns all grid items along the block (column) axis inside their grid cells.
+      - Possible values: start, end, center, stretch.
+      - Applies to all items in the container.
+
+   4. align-self
+      - Aligns a single grid item along the block (column) axis inside its own cell.
+      - Overrides align-items for that specific item.
+
+   5. place-items
+      - Shorthand for setting both align-items and justify-items at once.
+      - Syntax: place-items: <align-items> <justify-items>;
+      - Example: place-items: center start;
+
+   6. place-self
+      - Shorthand for setting both align-self and justify-self for an individual item.
+      - Syntax: place-self: <align-self> <justify-self>;
+      - Example: place-self: end stretch;
+
+Notes:
+   - "justify" refers to horizontal alignment (left-right in LTR layouts).
+   - "align" refers to vertical alignment (top-bottom).
+   - "place-" is shorthand for combining align and justify in a single property.
+*/
+
+.container {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: repeat(3,100px);
+    grid-gap: 50px 50px;
+
+    
+    /* justify-items */ 
+    justify-items: center; /* horizontally center (along main axis) */
+
+    /* align-items */
+    align-items: center; /* vertically center (along cross axis) */
+
+    /* place-items */
+    place-items: end end;
+
+    /* 
+    - Shorthand for setting both align-items and justify-items at once.
+    - Syntax: place-items: <align-items> <justify-items>;
+    */
+}
+
+   /* 
+   Notes:
+   - "justify" refers to horizontal alignment (left-right in LTR layouts).
+   - "align" refers to vertical alignment (top-bottom).
+   - "place-" is shorthand for combining align and justify in a single property. 
+   */
+
+/* 
+Note: "items" properties apply to all grid items in the container, while "self" properties target only a specific individual grid item.
+*/
+
+.item {
+    height: 75px;
+    width: 50px;
+}
+
+.one {
+    /* justify-self */
+    justify-self: center; /* horizontally center this specific item (overrides justify-items) */
+
+    /* align-self */
+    align-self: center;   /* vertically center this specific item (overrides align-items) */
+
+    /* place-self */
+    place-self: start start;
+
+    /* 
+    - Shorthand for setting both align-self and justify-self at once.
+    - Syntax: place-self: <align-self> <justify-self>;
+    */
+}
+
+/* 
+Note: "self" properties have greater priority than "items" properties and will override them for the specific grid item.
+*/

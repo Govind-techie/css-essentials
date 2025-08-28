@@ -1,0 +1,43 @@
+/*
+   Grid Gaps in CSS
+
+   Grid gaps are used to define the spacing between rows and columns inside a grid container. 
+   They make it easier to manage consistent spacing without adding extra margins to grid items.
+
+   1. row-gap:
+      - Controls the vertical space between rows in the grid.
+
+   2. column-gap:
+      - Controls the horizontal space between columns in the grid.
+
+   3. gap (shorthand):
+      - Allows you to set both row-gap and column-gap in a single declaration.
+      - Example: gap: 20px 10px; 
+        (20px is the row-gap, 10px is the column-gap)
+
+   Note:
+   - Grid gaps apply only inside the grid layout, between the grid tracks.
+   - They do not create space outside the grid container or around the grid items.
+   - Unlike margins, gaps do not collapse and ensure consistent spacing between elements.
+*/
+
+.container {
+    row-gap: 10px;    /* Defines vertical spacing between rows */
+    column-gap: 10px; /* Defines horizontal spacing between columns */
+
+    /* 
+    Think of it like this:
+	 -> Rows are stacked vertically, so a row gap means vertical spacing.
+	 -> Columns are placed side by side horizontally, so a column gap means horizontal spacing.
+    */
+
+    /* Analogy: Works like margins, but only inside the grid between rows and columns */
+
+    grid-gap: 10px 30px; 
+    
+    /* 
+    Shorthand for setting both gaps: 
+       - The first value represents the row-gap (vertical spacing). 
+       - The second value represents the column-gap (horizontal spacing).
+     */
+}

@@ -1,0 +1,63 @@
+/* 
+Z-Index - CSS
+
+- The z-index property controls the stacking order of elements along the z-axis (front-to-back).
+- Higher z-index values appear in front of lower ones.
+- Only works on elements with a positioning context (position: relative, absolute, fixed, or sticky).
+- Default value is auto (elements stack in HTML order).
+- Negative values are allowed (element can be behind others).
+- If elements share the same z-index, the one later in the DOM will appear on top.
+
+Important:
+- z-index only works if the element is positioned (not static).
+- Stacking contexts can be created by certain CSS properties (e.g., opacity < 1, transform).
+- Be careful when debugging: a new stacking context may prevent z-index from behaving as expected.
+*/
+
+/* 
+The .box class defines the base style for all boxes.
+It sets a fixed size and border for visibility.
+*/
+.box {
+    height: 150px;            
+    width: 150px;               
+    border: 2px solid black;
+}
+
+/* 
+The .one class applies a pink background.
+Although z-index is set to 2, it has no effect because 
+the default position is static (z-index only works with positioned elements).
+*/
+.one {
+    background-color: pink;        
+    z-index: 2; /* No effect since position is static by default */
+}
+
+/* 
+The .two class has a background color, is relatively positioned,
+and moved upward by 50px. Since position is relative, its z-index (1)
+takes effect, placing it above elements with a lower stacking order 
+but below higher z-index values.
+*/
+.two {
+    background-color: aquamarine;
+    position: relative;            /* Enables z-index to work */
+    bottom: 50px;                  /* Moves the element 50px upwards */
+    z-index: 1;                    /* Stacks above default elements (z=0), but below z=2 */
+}
+
+/* 
+The .three class applies a darksalmon background.
+No positioning or z-index is defined, so it uses default stacking rules.
+*/
+.three {
+    background-color: darksalmon;
+}
+
+/* 
+Important Notes:
+- z-index only works when the element has position set (relative, absolute, fixed, or sticky).
+- By default, all elements have z-index: auto (treated like 0).
+- Elements without z-index or positioning follow the DOM order.
+*/

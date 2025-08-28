@@ -1,0 +1,76 @@
+/* 
+Media Queries - CSS
+
+- Media queries allow CSS to adapt styles based on device characteristics (like screen size).
+- Commonly used for responsive design to ensure layouts work across desktops, tablets, and mobiles.
+- Basic syntax:
+    @media (condition) {
+        
+    }
+
+Common conditions:
+  max-width   : Apply styles when the viewport is smaller than or equal to the given width.
+  min-width   : Apply styles when the viewport is larger than or equal to the given width.
+  orientation : Target portrait or landscape modes.
+
+Important:
+- Use relative units (em, rem, %) for better responsiveness instead of fixed px.
+- Always design mobile-first (start with small screens and scale up with min-width).
+- Keep breakpoints consistent and meaningful to your layout needs.
+
+-> Helps to create a responsive website. 
+*/
+
+/* 
+The .one class defines a box with fixed height, width, and background color.
+These are the default styles applied unless overridden by media queries.
+*/
+
+.one {
+    height: 100px; 
+    width: 500px;                  
+    background-color: yellow;      
+}
+
+/* 
+This media query targets screens that are exactly 400px wide.
+Note: (width: 400px) is rarely used in practice; 
+      (max-width: 400px) or (min-width: 400px) are more common for responsiveness.
+*/
+@media (width: 400px) {
+    .one {
+        background-color: red;     /* Change box color when viewport width is exactly 400px */
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace; /* Change font family of h1 only at 400px width */
+    }
+}
+
+/* 
+Important Notes:
+- Use (max-width) or (min-width) instead of (width) for flexible responsiveness.
+- Specific width queries (like width: 400px) only apply to that exact width, 
+  which is very restrictive and not practical for real-world design.
+*/
+
+/* 
+This media query applies styles when the device is in landscape orientation 
+(width is greater than height).
+Useful for adjusting layouts or styles specifically for horizontal screens.
+*/
+@media (orientation: landscape) {
+    h1 {
+        color: aqua;           
+    }
+
+    .one {
+        background-color: indigo;
+    }
+}
+
+/*
+Important Notes:
+- Orientation queries are useful for tablets and mobiles where screen rotation changes layout.
+- Use them sparingly, only when design changes significantly between portrait and landscape.
+*/

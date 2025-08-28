@@ -1,0 +1,48 @@
+/* 
+GRID - CSS
+
+1. What is Grid?
+   - A powerful 2D layout system in CSS.
+   - Lets you arrange elements into rows and columns.
+
+2. Enable Grid:
+   display: grid;   -> turns an element into a grid container.
+
+3. Defining Rows & Columns:
+   grid-template-columns: 200px 200px auto;
+   grid-template-rows: 100px auto;
+
+   - You can use px, %, fr (fractional units), repeat(), minmax(), etc.
+
+4. Grid Gaps:
+   gap: 10px;            -> shorthand for row-gap and column-gap.
+   row-gap: 20px; 
+   column-gap: 15px;
+
+5. Placing Items:
+   grid-column: 1 / 3;   -> spans item across 2 columns.
+   grid-row: 2 / 4;      -> spans item across multiple rows.
+
+6. Shorthand Placement:
+   grid-area: row-start / col-start / row-end / col-end;
+
+7. Alignment:
+   justify-items, align-items -> controls items inside cells.
+   justify-content, align-content -> controls the whole grid.
+
+Note: CSS Grid is best for 2D layouts (rows + columns), 
+while Flexbox is best for 1D layouts (row or column).
+*/
+
+.container {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    display: grid;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}

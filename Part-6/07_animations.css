@@ -1,0 +1,63 @@
+/* 
+CSS Animations
+
+- CSS animations allow elements to smoothly transition between styles.
+- Animations are defined using @keyframes to describe style changes at different points.
+- The animation is applied to elements using the animation property.
+
+Common properties:
+  animation-name             : Name of the @keyframes to use.
+  animation-duration         : How long one cycle of the animation lasts.
+  animation-timing-function  : Controls the speed curve (ease, linear, etc.).
+  animation-delay            : Time to wait before the animation starts.
+  animation-iteration-count  : Number of times the animation runs (or infinite).
+  animation-direction        : Direction of animation (normal, reverse, alternate).
+  animation-fill-mode        : Defines how styles apply before/after animation.
+
+Shorthand syntax:
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+*/
+
+.box {
+    background-color: red; /* Initial background color */
+    height: 100px; /* Initial height of the box */
+    width: 100px;  /* Initial width of the box */
+
+    animation-name: identifier; /* Refers to the @keyframes block named 'identifier' */
+    animation-duration: 1s; /* Each animation cycle lasts 1 second */
+    animation-timing-function: ease-in;  /* Animation starts slow and speeds up */
+    animation-iteration-count: infinite; /* Animation will repeat endlessly */
+
+    animation-direction: alternate; /* Animation alternates direction on each cycle */
+
+    /* shortHand */
+    animation: identifier 1s ease-it-out 2s infinite alternate-reverse;
+
+    /*
+    Shorthand syntax:
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    */
+}
+
+@keyframes identifier {
+    from {
+        background-color: red; /* Starting background color */
+        height: 100px; /* Starting height */
+        width: 100px;  /* Starting width */
+    }
+
+    to {
+        background-color: yellow; /* Ending background color */
+        height: 50px; /* Ending height */
+        width: 50px;  /* Ending width */
+    }
+}
+
+/*
+Important Notes:
+- animation-name must exactly match the @keyframes name.
+- Always define both start (from) and end (to) states for clarity.
+- Use animation-iteration-count carefully (e.g., infinite can affect performance).
+- animation-direction: alternate helps avoid a jump back to the start state.
+- Keep animation-duration and animation-timing-function realistic for smoothness.
+*/

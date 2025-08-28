@@ -1,0 +1,36 @@
+.container {
+    display: grid; /* Enables grid layout */
+
+    /* Define three rows: each 100px tall */
+    grid-template-rows: 100px 100px 100px;
+
+    /* Define three columns: 1fr, 2fr, and 1fr for flexible sizing */
+    grid-template-columns: 1fr 2fr 1fr;
+
+    grid-template-rows: repeat(4, 1fr); /* repeat(count,unit) creates 4 equal rows, each taking 1 fraction of available space */
+    /* 
+    Note: repeat() is a shorthand to avoid writing the same track size multiple times. 
+    For example, repeat(4, 1fr) = 1fr 1fr 1fr 1fr 
+    */
+    
+}
+
+/*
+Note: The 'fr' unit divides available free space into flexible fractions, making columns scale proportionally.
+*/
+
+/* 
+  Explanation:
+  - grid-template-rows: Sets the height of each row. 
+    (Here, all rows are 100px tall.)
+  - grid-template-columns: Sets the width of each column.
+    (Here, the middle column is twice as wide as the others.)
+
+  Analogy: Like a table, rows control height, columns control width.
+*/
+
+/* 
+  Note:
+  - CSS Grid places items in row-major order by default (left to right, then top to bottom).
+  - Any extra grid items will automatically flow into new rows or columns as needed.
+*/
